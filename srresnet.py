@@ -59,3 +59,4 @@ canvas[0:height, 0:width, :] = img
 canvas[:, width_rescaled:width_rescaled*2, :] = bicubic_im
 canvas[:, width_rescaled*2:, :] = im_resized
 imsave("srresnet_%s_canvas.png" % input_name, canvas.astype(np.uint8))
+imsave("srresnet_output.png", im_resized.astype(np.uint8))

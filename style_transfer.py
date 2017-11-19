@@ -85,5 +85,5 @@ output[output<0] = 0
 output[output>255] = 255
 imsave("style_transfer_output.png", output.astype(np.uint8))
 
-ftimer = m.module.time_evaluator("run", ctx, 50)
-print(ftimer().mean)
+# ftimer = m.module.time_evaluator("run", ctx, 50)
+# print(ftimer().mean)
