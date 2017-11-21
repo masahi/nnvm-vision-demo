@@ -36,3 +36,14 @@ I trained the MXNet model using the code in [this](https://github.com/zhaw/neura
 <br></br>
 <img src='data/output/style_transfer_output.png' height="225px">
 </div>
+
+## Cardiac MR Image Segmentation
+Loads and runs a image segmentation network. The input is a cardiac MR image that depicts the left venticle (yellow), the myocardium (green), and the right venticle (pink). The network tries to segment these three.
+
+I trained the model with Pytorch and exported it in ONNX format. Below I put one of the good prediction results, but the accuracy of the trained model is not good at the moment. I'm working on training a better model. But again, training a good model is not my point in this demo.
+
+The data comes from [ACDC Challenge](https://www.creatis.insa-lyon.fr/Challenge/acdc/index.html) held at MICCAI 2017.
+
+<div align='center'>
+  <img src='data/output/unet_seg.png' height="256px">
+</div>
